@@ -1,0 +1,16 @@
+version: '3.1'
+
+services:
+  mongodb:
+    image: mongo:latest
+    container_name: onesafe-passkey-poc
+    ports:
+      - "27017:27017"
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: onesafe
+      MONGO_INITDB_ROOT_PASSWORD: 123456
+    volumes:
+      - mongodb_data:/data/db
+
+volumes:
+  mongodb_data:

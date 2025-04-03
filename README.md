@@ -1,6 +1,7 @@
 # Running the POC
+A poc for a React app and a fastify server to use passkeys for authentcation.
 
-a poc for a React app and a fastify server to use passkeys for authentcation.
+REF: https://simplewebauthn.dev/docs/
 
 `npm i`
 
